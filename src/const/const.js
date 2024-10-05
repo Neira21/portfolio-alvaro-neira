@@ -270,7 +270,7 @@ export const projectsitem = [
     descripcion: "Aplicación de películas realizada con ReactJS, utilizando la API de The Movie Database (TMDB). Con buscador de películas, se puede seleccionar si se quiere buscar series o películas, se puede ver el detalle de pelicula y agregar una calificacion, luego en otra seccion se puede ver el ranking de las peliculas dado por el usuario,",
     repositorio: ["https://github.com/Neira21/app-peliculas-tmbd", "https://github.com/Neira21/app-react-movietmdb-vite"],
     comentario: "Se aprendió a consumir una API y a mostrar los datos en la pantalla. Además de aprender a utilizar React Router DOM para la navegación entre páginas. Se podría mejorar el proyecto añadiendo un login de usuario para que cada usuario pueda tener su lista de películas calificadas.",
-    imagen: "./img/app-movie-tmbd.png",
+    imagen: "./img/app-movie-tmbd.webp",
     technologies: [
       {
         icon: IconKeys.react,
@@ -318,7 +318,7 @@ export const projectsitem = [
     descripcion: "Aplicación de películas realizada con .Net Core 3.1, crud de peliculas y usuarios, login de usuario, los usuarios pueden agregar sus propias películas y ver las películas agregadas por otros usuarios, además de comentarios, calificación, noticias de películas, entre otros.",
     repositorio: ["https://github.com/Neira21/MovieApp"],
     comentario: "Fue un proyecto de universidad para el curso de programación 1 (6to ciclo), se aprendió a utilizar .net Core, la versión 3.1, se usó el ORM de Entity Framework para la conexión a la base de datos, y heroku para el despliegue de la aplicación y uso de la base de datos. Se podría mejorar actualizando el código a una versión más actual de .net, la versión 3.1 ya es obsoleta.",
-    imagen: "./img/movie-net.png",
+    imagen: "./img/movie-net.webp",
     technologies: [
       {
         icon: IconKeys.net,
