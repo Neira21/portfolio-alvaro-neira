@@ -1,0 +1,24 @@
+---
+import { projectsitem } from "../../const/const";
+import CardProject from "./CardProject.astro";
+---
+
+
+<section class="" id="projects" >
+  <h1 class="text-4xl font-bold text-teal-400 text-center mb-6 ">PROYECTOS</h1>
+  <div class="flex flex-wrap justify-center gap-x-14 gap-y-20 ">
+    {
+      projectsitem.map((project) => (
+        <CardProject
+          nombre={project.nombre}  
+          resumen={project.resumen}
+          tecnologias={project.technologies}
+          repositorio={project.repositorio}
+          img={project.imagen}
+        />
+        
+      ))
+    }
+  </div>
+  
+</section>

@@ -1,0 +1,74 @@
+---
+import { projectsitem } from "../../const/const.js";
+import Layout from "../../layouts/Layout.astro";
+
+import { getIconComponent } from "../../icons/IconAll.astro";
+
+export async function getStaticPaths() {
+  return projectsitem.map((project) => ({
+    params: { id: project.nombre.toLowerCase().replace(/\s+/g, '-') },
+  }));
+}
+
+// Obtener el parámetro de la ruta (id)
+const { id } = Astro.params;
+
+// Encontrar el proyecto según el id
+const project = projectsitem.find((proj) => proj.nombre.toLowerCase().replace(/\s+/g, '-') === id);
+
+if (!project) {
+  throw new Error(`Project with id ${id} not found`);
+}
+
+---
+
+<Layout title="Proyecto Detalle">
+  <section>
+    
+    <h1 class="py-10 text-4xl font-bold text-teal-400 text-center mb-6 ">PROYECTO DETALLE</h1>
+      
+    <div class="flex flex-col flex-wrap justify-center gap-x-14 gap-y-10 ">
+      <h1><span class="font-bold text-xl">Título:</span> {project.nombre}</h1>
+      <p><span class="font-bold text-xl">Descripción:</span> {project.descripcion}</p>
+      <h2>Tecnologías aplicadas</h2>
+      <div class="flex justify-center gap-12">
+        
+        {project.technologies.map((tecnologia) => {
+          const IconComponent = getIconComponent(tecnologia.icon);          
+          return (
+            <li class="w-20 flex flex-col items-center justify-center gap-3">
+              {IconComponent && <IconComponent />}
+              <p class="text-center">{tecnologia.icon}</p>
+            </li>
+          );
+        }
+        )}
+      </div>
+      
+      <p>{project.comentario}</p>
+
+      <p class="">Repositorio: {project.repositorio.map((e, i) => (
+        <a
+          href={e}
+          class="items-center px-3 mx-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-800 cursor-pointer"
+        >
+          Repositorio {i + 1}
+        </a>
+      )) }</p>
+      
+      <p class="">Demo: {project.website.map((r, j) => (
+        <a
+          href={r}
+          class="items-center px-3 mx-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-800 cursor-pointer"
+        >
+          Demo {j + 1}
+        </a>
+      )) }</p>
+
+      
+      <img src={`../${project.imagen} `} width="600" class="mx-auto" alt="" />
+      
+    </div>
+  </section>
+
+</Layout>

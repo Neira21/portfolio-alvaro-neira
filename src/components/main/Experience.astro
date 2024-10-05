@@ -1,0 +1,24 @@
+---
+import { studies } from "../../const/const.js";
+import ItemExperience from "./itemExperience.astro";
+---
+
+<section class="my-20" id="experience">
+  <h1 class="text-4xl font-bold text-teal-400 text-center mb-10">EXPERIENCIA</h1>
+  <div class="mx-16 md:mx-40">
+    <ol class="relative border-s border-gray-200 dark:border-gray-700">
+      {studies.map(item => (
+        <ItemExperience
+          title={item.title}
+          corporation={item.corporation}
+          description={item.description}
+          date={item.date}
+          certificate={item.certificate}
+        >
+          
+        </ItemExperience>
+
+      ))}
+    </ol>
+  </div>
+</section>

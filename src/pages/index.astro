@@ -1,16 +1,24 @@
 ---
-
+  import Layout from "../layouts/Layout.astro";
+  import Header from "../components/header/Header.astro"
+  import About from "../components/main/About.astro"
+  import Projects from "../components/main/Projects.astro"
+  import Experience from "../components/main/Experience.astro"
+  import Tecnologias from "../components/main/Tecnologias.astro";
+  import Footer from "../components/footer/Footer.astro";
+  import Contact from "../components/main/Contact.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Portlofio Alvaro Neira">
+  <Header/>  
+  <main>
+    <About/>
+    <Projects/>
+    <Tecnologias/>
+    <Experience/>
+    <Contact/>
+  </main>
+  <footer>
+    <Footer/>
+  </footer>
+</Layout>
