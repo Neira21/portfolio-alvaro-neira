@@ -18,7 +18,7 @@ Bienvenido a mi portafolio personal, una página donde comparto información sob
 ###  🧱 Lenguajes y marcos de trabajo:
 > <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="24" height="24"/> HTML
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="24" height="24"/> CSS
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="24" height="24"/> TypeScript,  
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="24" height="24"/> TypeScript  
 
 
 ###  Frameworks y librerías:
@@ -29,8 +29,8 @@ Bienvenido a mi portafolio personal, una página donde comparto información sob
 
 
 ###   Dependencias de desarrollo:
-> <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite" width="24" height="24"/> Flowbite,  
-> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" width="24" height="24"/> tailwind,  
+> <img src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite" width="24" height="24"/> Flowbite
+> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" width="24" height="24"/> tailwind
 
 
 ### Herramientas de desarrollo:
