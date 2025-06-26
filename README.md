@@ -1,4 +1,4 @@
-# Portafolio Personal donde subiré los proyectos que vaya realizando.
+# 📱 Portafolio Personal donde subiré los proyectos que vaya realizando.
 Bienvenido a mi portafolio personal, una página donde comparto información sobre mí, mis habilidades y los proyectos que he desarrollado y experiencias. Cada proyecto incluye una descripción, tecnologías utilizadas y un enlace a su repositorio en GitHub. Si el proyecto es una aplicación web, también encontrarás un enlace para verlo en línea.
 
 ---
@@ -41,7 +41,7 @@ Bienvenido a mi portafolio personal, una página donde comparto información sob
 
 ---
 
-## Estructura de carpetas
+## 📁 Estructura de carpetas
 
 ```
 .
