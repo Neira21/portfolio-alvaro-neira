@@ -4,12 +4,15 @@ export const about = [
   "JavaScript",
   "Reactjs",
   "Nodejs",
+  "Angular",
   "Express",
   "Tailwind",
   "NetCore",
-  "MongoDB",
+  "React Native",
+  "Spring",
   "SQL",
   "Git",
+  "MongoDB",
 ]
 
 export const studies = [
